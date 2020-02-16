@@ -1,0 +1,10 @@
+<thlogic>
+    <attr sel="#footerId"
+          th:fragment="footerFragment"/>
+    <attr sel="#created-by"
+          th:text="|#{game.created-by} Zeps|"/>
+    <attr sel="#lang-en"
+          th:href="@{''(locale=en)}" />
+    <attr sel="#lang-lv"
+          th:href="@{''(locale=lv)}" />
+</thlogic>

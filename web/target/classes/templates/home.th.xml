@@ -1,0 +1,13 @@
+<thlogic>
+    <attr sel="#headId"
+          th:replace="~{fragments/head::headFragment}"/>
+    <attr sel="#resultMessage"
+          th:text="${__${T(training.programming.util.AttributeNames).RESULT_MESSAGE}__}"/>
+    <attr sel="#playId"
+          th:href="@{__${T(training.programming.util.GameMappings).PLAY}__}"
+          th:text="#{game.play}"/>
+    <attr sel="#footerId"
+          th:replace="~{fragments/footer::footerFragment}"/>
+    <attr sel="#welcomeMessage"
+          th:text="#{welcome.message}"/>
+</thlogic>
